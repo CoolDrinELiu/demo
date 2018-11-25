@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  resources :users
+  resources :sessions ,only:[:new, :create, :destroy]
+
   root 'static_pages#home'
   get  'static_pages/help'
-  get  'sign_up', to: 'users#sign_up'
+  get  'signup', to: 'users#new'
+  match '/signin' , to: 'sessions#create' , via: 'get'
+
+
 end
