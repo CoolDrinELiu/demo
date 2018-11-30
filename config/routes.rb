@@ -5,7 +5,5 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get  'static_pages/help'
   get  'signup', to: 'users#new'
-  match '/signin' , to: 'sessions#create' , via: 'get'
-
-
+  get  'signin', to: 'sessions#new'
 end
