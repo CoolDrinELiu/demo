@@ -1,14 +1,21 @@
 class SessionsController < ApplicationController
+  include SessionsHelper
+
   def create
     a = User.find_by(email: session_params["email"])
-    if a.authenticate(session_params["password"])
+    if a && a.authenticate(session_params["password"])
       sign_in a
-      remmber a
-      redirect_to root_path
+      remember a
+      redirect_to user_path a
+    else
+      flash.now[:error] = 'Invalid email/password combination'
+      render "new"
     end
   end
 
   def destroy
+    log_out
+    redirect_to root_path
   end
 
   def new
@@ -17,5 +24,4 @@ class SessionsController < ApplicationController
   def session_params
     params.require(:session).permit(:email, :password)
   end
-
 end
