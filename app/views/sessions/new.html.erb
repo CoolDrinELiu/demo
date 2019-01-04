@@ -3,13 +3,13 @@
   <div class="col-sm-offset-3 col-sm-6">
     <%= form_for :session, url: sessions_path, method: :post do |f| %>
         <%= f.label :email %>
-        <%= f.text_field :email %>
+        <%= f.text_field :email, value: cookies[:email] %>
         <%= f.label :password %>
         <%= f.password_field :password %>
         <%= f.label :remmber_me%>
         <%= f.check_box :remmber_me ,{style: "width:5px"}%>
         <div style="text-align: center;">
-        <%= f.submit "Create my account" , class: "btn-sm btn-primary", style: "width: 150px;" %>
+        <%= f.submit "Click me to log in" , class: "btn-sm btn-primary", style: "width: 150px;" %>
         </div>
     <% end %>
   </div>
