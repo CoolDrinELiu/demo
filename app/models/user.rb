@@ -9,6 +9,22 @@ class User < ApplicationRecord
             uniqueness: { case_sensitive: false }
   has_secure_password
 
+  has_many :microposts, class_name: "Micropost", foreign_key: "user_id", dependent: :destroy
+  # School
+  # id    name
+  #
+  # 1     A
+  # 2     B
+  #
+  #
+  # Student
+  # id    name   School_id
+  #
+  # 1     a1          1
+  # 2     a2          2
+  # 3     a3          1
+  # 4     a4          2
+  # 5     a5          1
   attr_accessor :remember_token, :activation_token
 
   def authenticated?(attribute ,token)
@@ -52,5 +68,9 @@ class User < ApplicationRecord
     # 发送激活邮件
     def send_activation_email
       UserMailer.account_activation(self).deliver_now
+    end
+
+    def feed
+      Micropost.where("user_id = ?", id)
     end
   end

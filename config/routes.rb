@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get  'static_pages/help'
   get  'signup', to: 'users#new'
   get  'signin', to: 'sessions#new'
+  resources :microposts,          only: [:create, :destroy]
 end
