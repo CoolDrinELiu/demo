@@ -1,0 +1,63 @@
+.page1{
+  position: relative;
+  height: 740px;
+  background: url(asset_path("asian_persuasion_practicing/section1.png")) no-repeat;
+  }
+//
+// .page1-1{
+//   position: absolute;
+//   height: 55px;width: 83.3%;
+//   background: white;
+//   // rgb  san yuan se tiao shi
+//   float: left;
+//   margin-left: 95px;
+//   margin-top: 621px;
+//   font-size: 2.1em;
+//   line-height: 1.7em;
+//   font-weight: bold;
+//   }
+.page1-1{
+  position: absolute !important;
+  background: white;
+  bottom: 70px;
+  }
+
+.page2{
+  background: white;
+  }
+.page2-1{
+  padding-left: 170px;
+  padding-right: 170px;
+  text-align: center;
+  font-size: 26px;
+  font-weight:bold;
+
+  }
+.page2-2{
+  font-size: 25px;
+  text-align: center;
+  }
+
+.page2-3{
+  font-size: 25px;
+  text-align: center;
+  }
+.page2-4{
+  font-size: 34px;
+  font-weight:bold;
+  }
+
+.page3{
+  height: 609px;
+
+  background: url(asset_path("asian_persuasion_practicing/section3.png")) no-repeat;
+  }
+.page3-1{
+  }
+
+.button{
+  height: 60px;
+  width: 200px;
+  background: gray;
+  display: block;
+}
