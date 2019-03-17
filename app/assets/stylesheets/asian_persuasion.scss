@@ -2,7 +2,8 @@
   position: relative;
   height: 740px;
   background: url(asset_path("asian_persuasion_practicing/section1.png")) no-repeat;
-  }
+  background-size:100%
+}
 //
 // .page1-1{
 //   position: absolute;
@@ -31,7 +32,6 @@
   text-align: center;
   font-size: 26px;
   font-weight:bold;
-
   }
 .page2-2{
   font-size: 25px;
@@ -43,21 +43,225 @@
   text-align: center;
   }
 .page2-4{
-  font-size: 34px;
+  font-size: 33px;
   font-weight:bold;
+  text-align: center;
   }
 
 .page3{
   height: 609px;
-
   background: url(asset_path("asian_persuasion_practicing/section3.png")) no-repeat;
   }
 .page3-1{
+  font-size: 21px;
+  margin-top: 162px;
+  padding-left: 100px;
+  color: white;
   }
-
+.page3-2{
+  font-size: 21px;
+  margin-top: 20px;
+  padding-left: 100px;
+  color: white;
+  }
+.page3-3{
+  font-size: 21px;
+  margin-top: 20px;
+  padding-left: 100px;
+  color: white;
+  }
+.page3-4{
+  font-size: 21px;
+  margin-top: 20px;
+  padding-left: 100px;
+  color: white;
+  }
+.page3-5{
+  float: left;
+  padding-left: 450px;
+  margin-top: 55px;
+  }
 .button{
   height: 60px;
   width: 200px;
   background: gray;
   display: block;
+  color: red;
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+  border-radius: 15px;
+  box-shadow: 10px 7px 3px black;
+//
+  color:#0088cc;
+  text-decoration:none;
+  &:hover{
+  color: #cc0000;
+  text-decoration:none;
+  background:green ;
+  //shu biao yishangqu bian xuanku
+  }
+}
+
+.page4{
+  background: url(asset_path("asian_persuasion_practicing/section4.png")) no-repeat;
+  height: 465px;
+  position: relative;
+  background-size:100%
+
+}
+.page4-1{
+  margin-top: 147px;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  line-height: 2;
+  font-size: 16px;
+}
+.button2{
+  height: 60px;
+  width: 200px;
+  background: gray;
+  display: block;
+  color: red;
+  line-height: 1;
+  font-size: 50px;
+  border-radius: 15px;
+  box-shadow: 10px 7px 3px black;
+  position: absolute !important;
+  left: 466px;
+  text-align: center;
+
+//
+  color:#0088cc;
+  text-decoration:none;
+  &:hover{
+  color: #cc0000;
+  text-decoration:none;
+  background:green ;
+  //shu biao yishangqu bian xuanku
+  }
+}
+
+.page5{
+  background: url(asset_path("asian_persuasion_practicing/section5.png")) no-repeat;
+  height: 465px;
+  position: relative;
+  background-size:100%
+}
+.page5-1{
+  margin-top: 147px;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  line-height: 2;
+  font-size: 16px;
+  color: white;
+}
+.button3{
+  height: 60px;
+  width: 200px;
+  background: gray;
+  display: block;
+  color: red;
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+  border-radius: 15px;
+  box-shadow: 10px 7px 3px black;
+  float: left;
+  margin-left: 455px;
+  //
+  color:#0088cc;
+  text-decoration:none;
+  &:hover{
+  color: #cc0000;
+  text-decoration:none;
+  background:green ;
+  //shu biao yishangqu bian xuanku
+  }
+}
+
+.page6{
+  height: 465px;
+  text-align: center;
+
+}
+.chicun{
+  width: 100%;
+}
+.h_chicun{
+  text-decoration: underline;
+}
+.p_chicun{
+  font-size: 14px !important;
+}
+.button4{height: 60px;
+  width: 200px;
+  background: gray;
+  display: block;
+  color: red;
+  line-height: 1;
+  font-size: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 3px black;
+  position: absolute !important;
+  left: 42.7%;
+  text-align: center;
+  margin-top: 365px;
+  //
+  color:#0088cc;
+  text-decoration:none;
+  &:hover{
+  color: #cc0000;
+  text-decoration:none;
+  background:green ;
+  //shu biao yishangqu bian xuanku
+  }
+}
+
+.page7{
+  height: 465px;
+  background: gray;
+
+  .page7-1-1{
+    height: 300px;
+    width: 300px;
+    margin-top: 40px;
+    }
+  .page7-2-1{
+    font-size: 70px;
+    margin-top: 40px;
+    color: white;
+
+  }
+  .page7-2-2{
+    font-size: 18px;
+    text-align: left;
+    color: white;
+  }
+  .page7-2-3{
+    font-size: 18px;
+    text-align: left;
+    color: white;
+
+  }
+}
+
+.page8{
+  height: 465px;
+  background: white;
+  .page8-1-1{
+    font-size: 60px;
+    margin-top: 40px;
+  }
+  .page8-1-2{
+    font-size: 18px !important;
+  }
+  .page8-2{
+    height: 300px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 200px;
+  }
 }
