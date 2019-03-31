@@ -15,3 +15,28 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).on("click", "#tijiao", function(){
+    var name_value = $("#name").val();
+    var phone_value = $("#phone").val();
+    $.ajax({
+      url: '/signup_event',
+      type: 'POST',
+      dataType: "json",
+      data: {
+        'name': name_value,
+        'phone': phone_value
+      },
+      success: function(response){
+        if(response.result === true){
+          alert(response.msg);
+          location.reload([false]);
+          // window.location.href="http://192.168.5.199:3000"
+          // dangqian url window.location.href;
+        }else{
+          alert(response.msg);
+        }
+      }
+    })
+
+    return false;
+  })

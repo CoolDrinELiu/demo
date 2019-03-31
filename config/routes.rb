@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get  'signin', to: 'sessions#new'
   get  'asian_persuasion', to:   'pages#asian_persuasion'
   resources :microposts,          only: [:create, :destroy]
+  post 'signup_event', to: 'events#create'
 end

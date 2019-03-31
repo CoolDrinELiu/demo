@@ -130,7 +130,8 @@ concentrating on for your future.
   <%=image_tag("asian_persuasion_practicing/perth.png", class:"chicun")%>
   <p p_chicun>12.30pm - 5.00pm Wednesday 10/04/2019 Royal Perth Golf Club</p>
   </div>
-  <a class="button4" href="/signup">rua!!</a>
+  <a class="button4",class="btn btn-primary btn-lg" data-toggle="modal" data-target="#eventModal">rua!!</a>
+  <!-- href="/signup" -->
   </div>
 <div class="col-sm-12 page7">
   <div class="col-sm-offset-1 col-sm-4 page7-1">
@@ -163,4 +164,45 @@ concentrating on for your future.
     <%=image_tag("asian_persuasion_practicing/anthony_buckwell.png", class:"page8-2")%>
   </div>
   </div>
+
+  <div class="test">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+
+
+
+
+
+
+  <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row1" style="width: 200px;text-align: center;margin: auto;">
+        <%=form_tag('/signup_event')%>
+          <%=label_tag 'name'%></br>
+          <%=text_field_tag 'name'%></br>
+          <%=label_tag 'phone'%></br>
+          <%=text_field_tag 'phone'%></br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%=submit_tag 'rua', id:'tijiao',class:'btn btn-primary',style:"width: 50px;text-align: center;margin: auto;"%>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
