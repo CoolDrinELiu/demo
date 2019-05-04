@@ -14,4 +14,7 @@ class EventsController < ApplicationController
   def event_params
     params.permit(:name,:phone)
   end
+  # # person.errors.full_message(:name, 'is invalid') # => "Name is invalid"
+  # a = {:name=>["rua"],:email=>["rua!"]}
+
 end

@@ -4,7 +4,31 @@
     <title>About | Ruby on Rails Tutorial Sample App</title>
   </head>
   <body>
-    <h1>About</h1>
+    <!-- <div style="width:150px">
+    <input id="inputOne" placeholder="X-men character" />
+    <input id="inputTwo" placeholder="Real name" />
+    </div>
+<script>
+    var options = {
+        url: "help.json",
+        getValue: function(element) {
+            return element.character;
+        },
+        list: {
+            onSelectItemEvent: function() {
+                var selectedItemValue = $("#inputOne").getSelectedItemData().realName;
+                $("#inputTwo").val(selectedItemValue).trigger("change");
+                alert("one is " + selectedItemValue);
+                alert("two is" + $("#inputTwo").val());
+            },
+            onHideListEvent: function() {
+            	$("#inputTwo").val("").trigger("change");
+        	}
+        }
+    };
+
+    $("#inputOne").easyAutocomplete(options);
+</script> -->
     <p class="default-font-size">
       About Page
     </p>

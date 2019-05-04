@@ -1,12 +1,8 @@
-class StaticPagesController < ApplicationController
-  def home
-    if current_user != nil
-      @micropost = current_user.microposts.new
-      @feed_items = current_user.feed.page(params[:page]).per(12)
-    end
-  end
+class RuasController < ApplicationController
+  def beijing
+    respond_to do |format|
+      format.json {render json: User.where("name like ?","%#{params[:phrase]}%").map{|x|{name:x.name,id:x.id}}}
 
-  def help
     # @json = [
     #     {"character": "Cyclops", "realName": "Scott Summers"},
     #     {"character": "Professor X", "realName": "Charles Francis Xavier"},
@@ -18,5 +14,6 @@ class StaticPagesController < ApplicationController
     # respond_to do |format|
     #   format.html
     #   format.json {render :json => @json}
+    end
   end
 end
